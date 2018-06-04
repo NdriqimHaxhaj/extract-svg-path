@@ -9,7 +9,7 @@ function extract(contents, opt) {
     var fullpath = ''
     $('path').each(function() {
         var d = $(this).attr('d') 
-        fullpath += d.replace(/\s+/g, ' ')+' '
+        fullpath += d;
     })
     return fullpath.trim()
 }

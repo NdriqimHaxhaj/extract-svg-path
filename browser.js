@@ -12,7 +12,7 @@ function extractSvgPath (svgDoc) {
   var paths = Array.prototype.slice.call(svgDoc.getElementsByTagName('path'))
   return paths.reduce(function (prev, path) {
     var d = path.getAttribute('d') || ''
-    return prev + ' ' + d.replace(/\s+/g, ' ').trim()
+    return prev + ' ' + d;
   }, '').trim()
 }
 
